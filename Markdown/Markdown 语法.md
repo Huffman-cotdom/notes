@@ -545,7 +545,7 @@ See the section on [`code`](https://markdown.com.cn/basic-syntax/links.html#code
 
 渲染效果如下：
 
-![这是图片](./Markdown 语法.assets/philly-magic-garden.9c0b4415.jpg)
+![这是图片](Markdown 语法.assets/philly-magic-garden.9c0b4415.jpg)
 
 ## 链接图片
 
@@ -555,9 +555,28 @@ See the section on [`code`](https://markdown.com.cn/basic-syntax/links.html#code
 [![沙漠中的岩石图片](/assets/img/shiprock.jpg "Shiprock")](https://markdown.com.cn)
 ```
 
-渲染效果如下：
+## 图片排版
 
-[![沙漠中的岩石图片](./Markdown 语法.assets/shiprock.c3b9a023.jpg)](https://markdown.com.cn/)
+将图片设置为左对齐
+
+```
+<img src = "./images/logo.png" align="left">
+```
+
+两张图片并排显示 - 设置相关的width即可
+
+```
+<center class="half">
+    <img src="img1.jpg" width="300"/>
+    <img src="img2.jpg" width="300"/>
+</center>
+```
+
+将图片居中
+
+```
+<div align=center><img src="地址" style="zoom:10%;" /></div>
+```
 
 
 
