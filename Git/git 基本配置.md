@@ -1,4 +1,4 @@
-# Git基本配置
+# Git 基本配置
 
 ## 安装
 
@@ -58,7 +58,7 @@ gi macos,visualstudiocode >> ~/.gitignore_global
 
 ### raycast gi 工具
 
-![image-20230413002349309](./git 基本配置.assets/image-20230413002349309.png)
+<img src="./git 基本配置.assets/image-20230413002349309.png" alt="image-20230413002349309" style="zoom:33%;" />
 
 ## 连接本地与远程服务器连接
 
@@ -72,7 +72,7 @@ gi macos,visualstudiocode >> ~/.gitignore_global
 ssh-keygen -t rsa -C "youremail@example.com"
 ```
 
-将生成的密钥：`~/.ssh/id_rsa.pub`中的内容复制到远程服务器（比如：GItHub）中的SSH-keys中。
+将生成的密钥：`~/.ssh/id_rsa.pub`中的内容复制到远程服务器（比如：GItHub）中的 SSH-keys 中。
 
 验证是否成功
 
@@ -114,7 +114,7 @@ git status
 git commit -m "init"
 ```
 
-将文件push到远程服务器仓库
+将文件 push 到远程服务器仓库
 
 ```shell
 git push -u origin main

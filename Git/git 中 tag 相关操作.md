@@ -1,4 +1,4 @@
-# Git中Tag相关操作
+# Git 中 Tag 相关操作
 
 git tag -a <tagname> 将会给最近提交的一次 commit 打上 tag 标签，然后使用 git push 提交该 tag。
 
@@ -48,7 +48,7 @@ git show v1.0
 
 修改 tag 名称
 
-将v6.2.0重命名为v6.6.2
+将 v6.2.0 重命名为 v6.6.2
 
 - 新版本号：v6.6.2
 - 错误版本号：v6.2.0

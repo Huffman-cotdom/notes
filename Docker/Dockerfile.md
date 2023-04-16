@@ -1,15 +1,15 @@
 # Dockerfile
 
-DockerFile是用来构建docker镜像的文件的命令参数脚本
+DockerFile 是用来构建 docker 镜像的文件的命令参数脚本
 
-构建步骤:
+构建步骤：
 
-1. 编写一个dockerfile脚本
+1. 编写一个 dockerfile 脚本
 2. docker build 构建成为一个镜像
 3. docker run 运行镜像
-4. docker push发布镜像(Docker hub , 阿里云镜像仓库! )
+4. docker push 发布镜像 (Docker hub , 阿里云镜像仓库！)
 
-## Dockerfile命令
+## Dockerfile 命令
 
 https://yeasy.gitbook.io/docker_practice/image/dockerfile
 

@@ -1,8 +1,11 @@
+# Markdown 速查表
+[Markdown 速查表](Markdown%20%E9%80%9F%E6%9F%A5%E8%A1%A8.md)
+
 # Markdown 标题语法
 
 要创建标题，请在单词或短语前面添加井号 (`#`) 。`#` 的数量代表了标题的级别。例如，添加三个 `#` 表示创建一个三级标题 (`<h3>`) (例如：`### My Header`)。
 
-| Markdown语法             | HTML                       |
+| Markdown 语法             | HTML                       |
 | ------------------------ | -------------------------- |
 | `# Heading level 1`      | `<h1>Heading level 1</h1>` |
 | `## Heading level 2`     | `<h2>Heading level 2</h2>` |
@@ -17,7 +20,7 @@
 
 还可以在文本下方添加任意数量的 == 号来标识一级标题，或者 -- 号来标识二级标题。
 
-| Markdown语法                  | HTML                       |
+| Markdown 语法                  | HTML                       |
 | ----------------------------- | -------------------------- |
 | `Heading level 1============` | `<h1>Heading level 1</h1>` |
 | `Heading level 2------------` | `<h2>Heading level 2</h2>` |
@@ -36,13 +39,13 @@
 
 要创建段落，请使用空白行将一行或多行文本进行分隔。
 
-| Markdown语法                                                 | HTML                                                         |
+| Markdown 语法                                                 | HTML                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | I really like using Markdown.<br />I think I'll use it to format all of my documents from now on. | <p>I really like using Markdown.</p><br /><p>I think I'll use it to format all of my documents from now on.</p> |
 
 ## 段落（Paragraph）用法的最佳实践
 
-不要用空格（spaces）或制表符（ tabs）缩进段落。
+不要用空格（spaces）或制表符（tabs）缩进段落。
 
 | ✅ Do this                                                    | ❌ Don't do this                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -50,9 +53,9 @@
 
 # Markdown 换行语法
 
-在一行的末尾添加两个或多个空格，然后按回车键,即可创建一个换行(`<br>`)。
+在一行的末尾添加两个或多个空格，然后按回车键，即可创建一个换行 (`<br>`)。
 
-| Markdown语法                                            | HTML                                                         | 预览效果                                             |
+| Markdown 语法                                            | HTML                                                         | 预览效果                                             |
 | ------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------- |
 | `This is the first line.  And this is the second line.` | `<p>This is the first line.<br>And this is the second line.</p>` | This is the first line. And this is the second line. |
 
@@ -80,7 +83,7 @@
 
 要加粗文本，请在单词或短语的前后各添加两个星号（asterisks）或下划线（underscores）。如需加粗一个单词或短语的中间部分用以表示强调的话，请在要加粗部分的两侧各添加两个星号（asterisks）。
 
-| Markdown语法                 | HTML                                      | 预览效果                   |
+| Markdown 语法                 | HTML                                      | 预览效果                   |
 | ---------------------------- | ----------------------------------------- | -------------------------- |
 | `I just love **bold text**.` | `I just love <strong>bold text</strong>.` | I just love **bold text**. |
 | `I just love __bold text__.` | `I just love <strong>bold text</strong>.` | I just love **bold text**. |
@@ -100,7 +103,7 @@ Markdown 应用程序在如何处理单词或短语中间的下划线上并不�
 
 要用斜体显示文本，请在单词或短语前后添加一个星号（asterisk）或下划线（underscore）。要斜体突出单词的中间部分，请在字母前后各添加一个星号，中间不要带空格。
 
-| Markdown语法                           | HTML                                          | 预览效果                             |
+| Markdown 语法                           | HTML                                          | 预览效果                             |
 | -------------------------------------- | --------------------------------------------- | ------------------------------------ |
 | `Italicized text is the *cat's meow*.` | `Italicized text is the <em>cat's meow</em>.` | Italicized text is the *cat’s meow*. |
 | `Italicized text is the _cat's meow_.` | `Italicized text is the <em>cat's meow</em>.` | Italicized text is the *cat’s meow*. |
@@ -120,7 +123,7 @@ Markdown 应用程序在如何处理单词或短语中间的下划线上并不�
 
 要同时用粗体和斜体突出显示文本，请在单词或短语的前后各添加三个星号或下划线。要加粗并用斜体显示单词或短语的中间部分，请在要突出显示的部分前后各添加三个星号，中间不要带空格。
 
-| Markdown语法                              | HTML                                                         | 预览效果                                |
+| Markdown 语法                              | HTML                                                         | 预览效果                                |
 | ----------------------------------------- | ------------------------------------------------------------ | --------------------------------------- |
 | `This text is ***really important***.`    | `This text is <strong><em>really important</em></strong>.`   | This text is ***really important***.    |
 | `This text is ___really important___.`    | `This text is <strong><em>really important</em></strong>.`   | This text is ___really important___.    |
@@ -214,7 +217,7 @@ Markdown 应用程序在处理单词或短语中间添加的下划线上并不�
 
 要创建有序列表，请在每个列表项前添加数字并紧跟一个英文句点。数字不必按数学顺序排列，但是列表应当以数字 1 起始。
 
-| Markdown语法                                                 | HTML                                                         |
+| Markdown 语法                                                 | HTML                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 1. First item<br />2. Second item<br />3. Third item\|<br />4. Fourth item | <ol><br /><li>First item</li><br /><li>Second item</li><br /><li>Third item</li><br /><li>Fourth item</li><br /></ol> |
 | 1. First item<br />2. Second item<br />3. Third item  <br />    1. Indented item<br />     2. Indented item<br />4. Fourth item | <ol><br /><li>First item</li><br /><li>Second item</li><br /><li>Third item<br /><ol><br /><li>Indented item</li><br /><li>Indented item</li><br /></ol><br /></li><br /><li>Fourth item</li><br /></ol> |
@@ -232,10 +235,10 @@ Markdown 应用程序在处理单词或短语中间添加的下划线上并不�
 
 要创建无序列表，请在每个列表项前面添加破折号 (-)、星号 (*) 或加号 (+) 。缩进一个或多个列表项可创建嵌套列表。
 
-| Markdown语法                                                 | HTML                                                         |
+| Markdown 语法                                                 | HTML                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | - First item<br />- Second item<br />- Third item<br />- Fourth item | <ul><br /><li>First item</li><br /><li>Second item</li><br /><li>Third item</li><br /><li>Fourth item</li><br /></ul> |
-| * First item<br />* Second item<br />* Third item<br /> Fourth item | <ul><br /><li>First item</li><br /><li>Second item</li><br /><li>Third item</li><br /><li>Fourth item</li><br /></ul> |
+| * First item<br />* Second item<br />* Third item<br />* Fourth item | <ul><br /><li>First item</li><br /><li>Second item</li><br /><li>Third item</li><br /><li>Fourth item</li><br /></ul> |
 | + First item<br />+ Second item<br />+ Third item<br />+ Fourth item | <ul><br /><li>First item</li><br /><li>Second item</li><br /><li>Third item</li><br /><li>Fourth item</li><br /></ul> |
 | - First item<br />- Second item<br />- Third item<br />    - Indented item<br />    - Indented item<br />- Fourth item | <ul><br /><li>First item</li><br /><li>Second item</li><br /><li>Third item<br /><ul><br /><li>Indented item</li><br /><li>Indented item</li>\|<br /></ul><br /></li><br /><li>Fourth item</li><br /></ul> |
 
@@ -247,7 +250,7 @@ Markdown 应用程序在处理单词或短语中间添加的下划线上并不�
 - Second item
 - Third item
   - ndented item
-  - Indented item、
+  - Indented item,
 - Fourth item
 
 ## 在列表中嵌套其他元素
@@ -366,15 +369,15 @@ You can nest an unordered list in an ordered list, or vice versa.
 
 要将单词或短语表示为代码，请将其包裹在反引号 ( ` ) 中。
 
-| Markdown语法                        | HTML                                           | 预览效果                            |
+| Markdown 语法                        | HTML                                           | 预览效果                            |
 | ----------------------------------- | ---------------------------------------------- | ----------------------------------- |
 | At the command prompt, type `nano`. | At the command prompt, type <code>nano</code>. | At the command prompt, type `nano`. |
 
 ## 转义反引号
 
-如果你要表示为代码的单词或短语中包含一个或多个反引号，则可以通过将单词或短语包裹在双反引号( `` )中。
+如果你要表示为代码的单词或短语中包含一个或多个反引号，则可以通过将单词或短语包裹在双反引号 ( `` ) 中。
 
-| Markdown语法                          | HTML                                           | 预览效果                              |
+| Markdown 语法                          | HTML                                           | 预览效果                              |
 | ------------------------------------- | ---------------------------------------------- | ------------------------------------- |
 | ``Use `code` in your Markdown file.`` | <code>Use `code` in your Markdown file.</code> | ``Use `code` in your Markdown file.`` |
 
@@ -428,35 +431,35 @@ _________________
 
 # Markdown 链接语法
 
-链接文本放在中括号内，链接地址放在后面的括号中，链接title可选。
+链接文本放在中括号内，链接地址放在后面的括号中，链接 title 可选。
 
-超链接Markdown语法代码：`[超链接显示名](超链接地址 "超链接title")`
+超链接 Markdown 语法代码：`[超链接显示名](超链接地址 "超链接title")`
 
-对应的HTML代码：`<a href="超链接地址" title="超链接title">超链接显示名</a>`
+对应的 HTML 代码：`<a href="超链接地址" title="超链接title">超链接显示名</a>`
 
 ```text
-这是一个链接 [Markdown语法](https://markdown.com.cn)。
+这是一个链接 [Markdown 语法](https://markdown.com.cn)。
 ```
 
 渲染效果如下：
 
-这是一个链接 [Markdown语法](https://markdown.com.cn/)。
+这是一个链接 [Markdown 语法](https://markdown.com.cn/)。
 
 ## 给链接增加 Title
 
-链接title是当鼠标悬停在链接上时会出现的文字，这个title是可选的，它放在圆括号中链接地址后面，跟链接地址之间以空格分隔。
+链接 title 是当鼠标悬停在链接上时会出现的文字，这个 title 是可选的，它放在圆括号中链接地址后面，跟链接地址之间以空格分隔。
 
 ```text
-这是一个链接 [Markdown语法](https://markdown.com.cn "最好的markdown教程")。
+这是一个链接 [Markdown 语法](https://markdown.com.cn "最好的markdown教程")。
 ```
 
 渲染效果如下：
 
-这是一个链接 [Markdown语法](https://markdown.com.cn/)。
+这是一个链接 [Markdown 语法](https://markdown.com.cn/)。
 
-## 网址和Email地址
+## 网址和 Email 地址
 
-使用尖括号可以很方便地把URL或者email地址变成可点击的链接。
+使用尖括号可以很方便地把 URL 或者 email 地址变成可点击的链接。
 
 ```text
 <https://markdown.com.cn>
@@ -470,7 +473,7 @@ _________________
 
 ## 带格式化的链接
 
-[强调](https://markdown.com.cn/basic-syntax/links.html#emphasis) 链接, 在链接语法前后增加星号。 要将链接表示为代码，请在方括号中添加反引号。
+[强调](https://markdown.com.cn/basic-syntax/links.html#emphasis) 链接，在链接语法前后增加星号。要将链接表示为代码，请在方括号中添加反引号。
 
 ```text
 I love supporting the **[EFF](https://eff.org)**.
@@ -486,7 +489,7 @@ See the section on [`code`](https://markdown.com.cn/basic-syntax/links.html#code
 
 ## 引用类型链接
 
-引用样式链接是一种特殊的链接，它使URL在Markdown中更易于显示和阅读。参考样式链接分为两部分：与文本保持内联的部分以及存储在文件中其他位置的部分，以使文本易于阅读。
+引用样式链接是一种特殊的链接，它使 URL 在 Markdown 中更易于显示和阅读。参考样式链接分为两部分：与文本保持内联的部分以及存储在文件中其他位置的部分，以使文本易于阅读。
 
 ### 链接的第一部分格式
 
@@ -504,7 +507,7 @@ See the section on [`code`](https://markdown.com.cn/basic-syntax/links.html#code
 引用类型链接的第二部分使用以下属性设置格式：
 
 1. 放在括号中的标签，其后紧跟一个冒号和至少一个空格（例如`[label]:`）。
-2. 链接的URL，可以选择将其括在尖括号中。
+2. 链接的 URL，可以选择将其括在尖括号中。
 3. 链接的可选标题，可以将其括在双引号，单引号或括号中。
 
 以下示例格式对于链接的第二部分效果相同：
@@ -517,13 +520,13 @@ See the section on [`code`](https://markdown.com.cn/basic-syntax/links.html#code
 - `[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> 'Hobbit lifestyles'`
 - `[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> (Hobbit lifestyles)`
 
-可以将链接的第二部分放在Markdown文档中的任何位置。有些人将它们放在出现的段落之后，有些人则将它们放在文档的末尾（例如尾注或脚注）。
+可以将链接的第二部分放在 Markdown 文档中的任何位置。有些人将它们放在出现的段落之后，有些人则将它们放在文档的末尾（例如尾注或脚注）。
 
 [1]:https://en.wikipedia.org/wiki/Hobbit#Lifestyle
 
 ## 链接最佳实践
 
-不同的 Markdown 应用程序处理URL中间的空格方式不一样。为了兼容性，请尽量使用%20代替空格。
+不同的 Markdown 应用程序处理 URL 中间的空格方式不一样。为了兼容性，请尽量使用%20 代替空格。
 
 | ✅ Do this                                           | ❌ Don't do this                                 |
 | --------------------------------------------------- | ----------------------------------------------- |
@@ -535,9 +538,9 @@ See the section on [`code`](https://markdown.com.cn/basic-syntax/links.html#code
 
 要添加图像，请使用感叹号 (`!`), 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。
 
-插入图片Markdown语法代码：`![图片alt](图片链接 "图片title")`。
+插入图片 Markdown 语法代码：`![图片alt](图片链接 "图片title")`。
 
-对应的HTML代码：`<img src="图片链接" alt="图片alt" title="图片title">`
+对应的 HTML 代码：`<img src="图片链接" alt="图片alt" title="图片title">`
 
 ```text
 ![这是图片](/assets/img/philly-magic-garden.jpg "Magic Gardens")
@@ -549,7 +552,7 @@ See the section on [`code`](https://markdown.com.cn/basic-syntax/links.html#code
 
 ## 链接图片
 
-给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。
+给图片增加链接，请将图像的 Markdown 括在方括号中，然后将链接添加在圆括号中。
 
 ```text
 [![沙漠中的岩石图片](/assets/img/shiprock.jpg "Shiprock")](https://markdown.com.cn)
@@ -563,7 +566,7 @@ See the section on [`code`](https://markdown.com.cn/basic-syntax/links.html#code
 <img src = "./images/logo.png" align="left">
 ```
 
-两张图片并排显示 - 设置相关的width即可
+两张图片并排显示 - 设置相关的 width 即可
 
 ```
 <center class="half">
@@ -672,13 +675,13 @@ Markdown 将会把它转换为：
 
 HTML 的行级內联标签如 `<span>`、`<cite>`、`<del>` 不受限制，可以在 Markdown 的段落、列表或是标题里任意使用。依照个人习惯，甚至可以不用 Markdown 格式，而采用 HTML 标签来格式化。例如：如果比较喜欢 HTML 的 `<a>` 或 `<img>` 标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图片语法。当你需要更改元素的属性时（例如为文本指定颜色或更改图像的宽度），使用 HTML 标签更方便些。
 
-HTML 行级內联标签和区块标签不同，在內联标签的范围内， Markdown 的语法是可以解析的。
+HTML 行级內联标签和区块标签不同，在內联标签的范围内，Markdown 的语法是可以解析的。
 
 ```text
 This **word** is bold. This <em>word</em> is italic.
 ```
 
-渲染效果如下:
+渲染效果如下：
 
 This **word** is bold. This *word* is italic.
 
@@ -739,7 +742,7 @@ This is another regular paragraph.
 | Paragraph | Text |
 ```
 
-**Tip:** 使用连字符和管道创建表可能很麻烦。为了加快该过程，请尝试使用[Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables)。使用图形界面构建表，然后将生成的Markdown格式的文本复制到文件中。
+**Tip:** 使用连字符和管道创建表可能很麻烦。为了加快该过程，请尝试使用[Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables)。使用图形界面构建表，然后将生成的 Markdown 格式的文本复制到文件中。
 
 ## 对齐
 
@@ -763,17 +766,17 @@ This is another regular paragraph.
 
 您可以在表格中设置文本格式。例如，您可以添加链接，代码（仅反引号（```）中的单词或短语，而不是代码块）和强调。
 
-您不能添加标题，块引用，列表，水平规则，图像或HTML标签。
+您不能添加标题，块引用，列表，水平规则，图像或 HTML 标签。
 
 ## 在表中转义管道字符
 
-您可以使用表格的HTML字符代码（`|`）在表中显示竖线（`|`）字符。
+您可以使用表格的 HTML 字符代码（`|`）在表中显示竖线（`|`）字符。
 
 
 
 # Markdown 围栏代码块
 
-Markdown基本语法允许您通过将行缩进四个空格或一个制表符来创建代码块。如果发现不方便，请尝试使用受保护的代码块。根据Markdown处理器或编辑器的不同，您将在代码块之前和之后的行上使用三个反引号（(`````）或三个波浪号（~~~）。
+Markdown 基本语法允许您通过将行缩进四个空格或一个制表符来创建代码块。如果发现不方便，请尝试使用受保护的代码块。根据 Markdown 处理器或编辑器的不同，您将在代码块之前和之后的行上使用三个反引号（(`````）或三个波浪号（~~~）。
 
 ~~~text
 ```
@@ -799,7 +802,7 @@ Markdown基本语法允许您通过将行缩进四个空格或一个制表符来
 
 ## 语法高亮
 
-许多Markdown处理器都支持受围栏代码块的语法突出显示。使用此功能，您可以为编写代码的任何语言添加颜色突出显示。要添加语法突出显示，请在受防护的代码块之前的反引号旁边指定一种语言。
+许多 Markdown 处理器都支持受围栏代码块的语法突出显示。使用此功能，您可以为编写代码的任何语言添加颜色突出显示。要添加语法突出显示，请在受防护的代码块之前的反引号旁边指定一种语言。
 
 ~~~text
 ```json
@@ -827,7 +830,7 @@ Markdown基本语法允许您通过将行缩进四个空格或一个制表符来
 
 脚注使您可以添加注释和参考，而不会使文档正文混乱。当您创建脚注时，带有脚注的上标数字会出现在您添加脚注参考的位置。读者可以单击链接以跳至页面底部的脚注内容。
 
-要创建脚注参考，请在方括号（`[^1]`）内添加插入符号和标识符。标识符可以是数字或单词，但不能包含空格或制表符。标识符仅将脚注参考与脚注本身相关联-在输出中，脚注按顺序编号。
+要创建脚注参考，请在方括号（`[^1]`）内添加插入符号和标识符。标识符可以是数字或单词，但不能包含空格或制表符。标识符仅将脚注参考与脚注本身相关联 - 在输出中，脚注按顺序编号。
 
 在括号内使用另一个插入符号和数字添加脚注，并用冒号和文本（`[^1]: My footnote.`）。您不必在文档末尾添加脚注。您可以将它们放在除列表，块引号和表之类的其他元素之外的任何位置。
 
@@ -866,29 +869,29 @@ Add as many paragraphs as you like.
 
 > `typora`貌似不支持
 
-许多Markdown处理器支持[标题](https://markdown.com.cn/basic-syntax/headings.html)的自定义ID - 一些Markdown处理器会自动添加它们。添加自定义ID允许您直接链接到标题并使用CSS对其进行修改。要添加自定义标题ID，请在与标题相同的行上用大括号括起该自定义ID。
+许多 Markdown 处理器支持[标题](https://markdown.com.cn/basic-syntax/headings.html)的自定义 ID - 一些 Markdown 处理器会自动添加它们。添加自定义 ID 允许您直接链接到标题并使用 CSS 对其进行修改。要添加自定义标题 ID，请在与标题相同的行上用大括号括起该自定义 ID。
 
 ```text
 ### My Great Heading {#custom-id}
 ```
 
-HTML看起来像这样：
+HTML 看起来像这样：
 
 ```html
 <h3 id="custom-id">My Great Heading</h3>
 ```
 
-## 链接到标题ID (#headid)
+## 链接到标题 ID (#headid)
 
-通过创建带有数字符号（`#`）和自定义标题ID的[标准链接]((/basic-syntax/links.html)，可以链接到文件中具有自定义ID的标题。
+通过创建带有数字符号（`#`）和自定义标题 ID 的[标准链接]((/basic-syntax/links.html)，可以链接到文件中具有自定义 ID 的标题。
 
 | Markdown                      | HTML                                     |
 | ----------------------------- | ---------------------------------------- |
 | `[Heading IDs](#heading-ids)` | `<a href="#heading-ids">Heading IDs</a>` |
 
-其他网站可以通过将自定义标题ID添加到网页的完整URL（例如`[Heading IDs](https://markdown.com.cn/extended-syntax/heading-ids.html#headid)`）来链接到标题。
+其他网站可以通过将自定义标题 ID 添加到网页的完整 URL（例如`[Heading IDs](https://markdown.com.cn/extended-syntax/heading-ids.html#headid)`）来链接到标题。
 
-### 链接到标题ID最佳实践
+### 链接到标题 ID 最佳实践
 
 [回到顶部](#Markdown 标题语法)
 
@@ -896,7 +899,7 @@ HTML看起来像这样：
 
 # Markdown 定义列表
 
-一些Markdown处理器允许您创建术语及其对应定义的*定义列表*。要创建定义列表，请在第一行上键入术语。在下一行，键入一个冒号，后跟一个空格和定义。
+一些 Markdown 处理器允许您创建术语及其对应定义的*定义列表*。要创建定义列表，请在第一行上键入术语。在下一行，键入一个冒号，后跟一个空格和定义。
 
 ```text
 First Term
@@ -907,7 +910,7 @@ Second Term
 : This is another definition of the second term.
 ```
 
-HTML看起来像这样：
+HTML 看起来像这样：
 
 ```html
 <dl>
@@ -943,13 +946,13 @@ HTML看起来像这样：
 
 呈现的输出如下所示：
 
-世界是平坦的。 我们现在知道世界是圆的。
+世界是平坦的。我们现在知道世界是圆的。
 
 
 
 # Markdown 任务列表语法
 
-任务列表使您可以创建带有复选框的项目列表。在支持任务列表的Markdown应用程序中，复选框将显示在内容旁边。要创建任务列表，请在任务列表项之前添加破折号`-`和方括号`[ ]`，并在`[ ]`前面加上空格。要选择一个复选框，请在方括号`[x]`之间添加 x 。
+任务列表使您可以创建带有复选框的项目列表。在支持任务列表的 Markdown 应用程序中，复选框将显示在内容旁边。要创建任务列表，请在任务列表项之前添加破折号`-`和方括号`[ ]`，并在`[ ]`前面加上空格。要选择一个复选框，请在方括号`[x]`之间添加 x。
 
 ```text
 - [x] Write the press release
@@ -967,17 +970,17 @@ HTML看起来像这样：
 
 # Markdown 使用 Emoji 表情
 
-有两种方法可以将表情符号添加到Markdown文件中：将表情符号复制并粘贴到Markdown格式的文本中，或者键入*emoji shortcodes*。
+有两种方法可以将表情符号添加到 Markdown 文件中：将表情符号复制并粘贴到 Markdown 格式的文本中，或者键入*emoji shortcodes*。
 
 ## 复制和粘贴表情符号
 
-许多Markdown应用程序会自动以Markdown格式的文本显示表情符号。从Markdown应用程序导出的HTML和PDF文件应显示表情符号。
+许多 Markdown 应用程序会自动以 Markdown 格式的文本显示表情符号。从 Markdown 应用程序导出的 HTML 和 PDF 文件应显示表情符号。
 
-**Tip:** 如果您使用的是静态网站生成器，请确保将HTML页面编码为UTF-8。.
+**Tip:** 如果您使用的是静态网站生成器，请确保将 HTML 页面编码为 UTF-8。.
 
 ## 使用表情符号简码
 
-一些Markdown应用程序允许您通过键入表情符号短代码来插入表情符号。这些以冒号开头和结尾，并包含表情符号的名称。
+一些 Markdown 应用程序允许您通过键入表情符号短代码来插入表情符号。这些以冒号开头和结尾，并包含表情符号的名称。
 
 ```text
 去露营了！ :tent: 很快回来。
@@ -997,7 +1000,7 @@ HTML看起来像这样：
 
 # 自动网址链接
 
-许多Markdown处理器会自动将URL转换为链接。这意味着如果您输入http://www.example.com，即使您未[使用方括号](https://markdown.com.cn/basic-syntax/links.html)，您的Markdown处理器也会自动将其转换为链接。
+许多 Markdown 处理器会自动将 URL 转换为链接。这意味着如果您输入 http://www.example.com，即使您未[使用方括号](https://markdown.com.cn/basic-syntax/links.html)，您的 Markdown 处理器也会自动将其转换为链接。
 
 ```text
 http://www.example.com
@@ -1007,9 +1010,9 @@ http://www.example.com
 
 [http://www.example.com](http://www.example.com/)
 
-## 禁用自动URL链接
+## 禁用自动 URL 链接
 
-如果您不希望自动链接URL，则可以通过将URL表示为带反引号的代码来删除该链接。
+如果您不希望自动链接 URL，则可以通过将 URL 表示为带反引号的代码来删除该链接。
 
 ```text
 `http://www.example.com`
@@ -1021,7 +1024,8 @@ http://www.example.com
 http://www.example.com
 ```
 
-
+# Markdown 公式
+[Markdown 公式](Markdown%20%E5%85%AC%E5%BC%8F.md)
 
 
 
