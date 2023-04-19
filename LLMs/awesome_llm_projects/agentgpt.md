@@ -1,4 +1,12 @@
 # AgentGPT
+- [AgentGPT](#agentgpt)
+  - [特性](#特性)
+  - [基本原理](#基本原理)
+    - [行动](#行动)
+    - [分析行动结果](#分析行动结果)
+    - [执行任务](#执行任务)
+    - [整体循环](#整体循环)
+    - [memory 的作用](#memory-的作用)
 
 >GPT 自我 Prompt 
 >GitHub 地址：https://github.com/reworkd/AgentGPT

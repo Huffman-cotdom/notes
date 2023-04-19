@@ -12,6 +12,12 @@ https://huggingface.co/datasets/GEM/wiki_lingua
 
 https://huggingface.co/datasets/suolyer/cnki_summary
 
+# 中文开放通用指令集
+
+https://huggingface.co/datasets/BAAI/COIG
+
+https://huggingface.co/datasets/BAAI/COIG
+
 # 机器翻译
 
 BBC 新闻和联合国决议文本，相对正式。BLOOMZ 并没有采用这两个机器翻译数据集。
