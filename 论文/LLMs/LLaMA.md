@@ -1,6 +1,6 @@
 # LLaMA
 
-> 论文：[LLaMA](LLaMA.assets/LLaMA.pdf)
+> 论文：[LLaMA](assents/LLaMA.pdf)
 > GitHub 地址：https://github.com/facebookresearch/llama
 
 ## 简介
@@ -34,8 +34,7 @@
 ### 开源数据
 
 
-
-![image-20230422232811593](LLaMA.assets/image-20230422232811593.png)
+![image-20230422232811593](assents/image-20230422232811593.png)
 
 1. **英语 CommonCrawl**，占比 67%
 
@@ -97,7 +96,7 @@ QA 数据对于提升垂直的专业问题也有帮助。
 
 值得注意的是，**对于数字，将它们拆分成单独的数字，对于未知的 UTF-8 字符，则使用字节来进行分解**。
 
-![超参数](LLaMA.assets/截屏2023-04-22%2023.50.41.png)
+![超参数](assents/截屏2023-04-22%2023.50.41.png)
 
 另外，**在数据采样方面，对于大多数训练数据，每个 token 在训练过程中只采样一次，但维基百科和图书领域除外，对这些领域进行了大约两个 epochs。**
 
