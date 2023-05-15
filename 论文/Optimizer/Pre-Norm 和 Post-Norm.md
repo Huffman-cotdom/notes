@@ -10,9 +10,38 @@ Layer Normalization 的位置对于 Transformer 模型训练也非常重要的�
 
 传统的 LN 是在残差之后，做完 Add 之后再进行归一化，这种方式叫做 Post-Norm。
 
-Pre-nrom 是把 LN 放在残差之前：
+Pre-Nrom 是把 LN 放在残差之前：
 
 ![Pre-Norm 和 Post-Norm](assents/截屏2023-04-23%2016.23.25.png)
+
+在原始 Transformer 中 Add&Norm 层由 Add 和 Norm 两部分组成，其 LN 为 Post-Norm：
+
+![Add&Norm](assents/Pasted%20image%2020230515220139.png)
+![](assents/Pasted%20image%2020230515220226.png)
+
+Feed Forward 是一个两层的全连接层，第一层的激活函数为 Relu，第二层不使用激活函数，对应的公式如下：
+$$max(0, XW_1 + b_1)W_1+b_2$$
+在 LLaMA 中，
+```python
+class TransformerBlock(nn.Module):
+    def __init__(self, layer_id: int, args: ModelArgs):
+        super().__init__()
+        self.n_heads = args.n_heads
+        self.dim = args.dim
+        self.head_dim = args.dim // args.n_heads
+        self.attention = Attention(args)
+        self.feed_forward = FeedForward(
+            dim=args.dim, hidden_dim=4 * args.dim, multiple_of=args.multiple_of
+        )
+        self.layer_id = layer_id
+        self.attention_norm = RMSNorm(args.dim, eps=args.norm_eps)
+        self.ffn_norm = RMSNorm(args.dim, eps=args.norm_eps)
+
+    def forward(self, x: torch.Tensor, start_pos: int, freqs_cis: torch.Tensor, mask: Optional[torch.Tensor]):
+        h = x + self.attention.forward(self.attention_norm(x), start_pos, freqs_cis, mask)
+        out = h + self.feed_forward.forward(self.ffn_norm(h))
+        return out
+```
 
 ## 理解
 

@@ -115,6 +115,11 @@ LLaMA normalization 是指的 Layer norm（一般 NLP 任务都是 LN）
 - 为了提高训练稳定性，对每个变换器子层的输入进行 normalizing，而不是对输出 normalizing
 - 使用 RMSNorm 作为 norm func
 
+#### SwiGLU 激活函数
+
+
+#### 旋转位置嵌入 RoPE
+
 
 
 
