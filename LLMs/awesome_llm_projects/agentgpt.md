@@ -24,7 +24,7 @@
 
 ## 基本原理
 
-![agentgpt 流程图](agentgpt.assets/agentgpt流程图.png)
+![agentgpt 流程图](assents/agentgpt流程图.png)
 
 AgentGPT 不是简单地要求 ChatGPT 创建代码，而是将 OpenAI 的 GPT 模型的多个实例链接在一起，让多个 GPT 代理协同工作，使其能够在没有帮助的情况下完成任务、编写和调试代码以及纠正自己的编写错误等事情。
 
