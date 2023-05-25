@@ -7,14 +7,10 @@ AutoGPT 是 GitHub 上的一个开源项目，它致力于使 GPT4 完全自主�
   
 
 由于不需要用户引导 AI，项目一经推出就爆火，截至目前，项目上线五十多天，拥有 13.1w star，2.67w fork，是 GitHub 历史上增长速度最快的项目之一。前特斯拉总监、刚刚回归 OpenAI 的 Andrej Karpathy 也为其大力宣传，称「AutoGPT 是 prompt 工程的下一个前沿。」
-
-![](https://bytedance.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWM2MjViN2Y1MGRhNDJiN2RkZjk1Nzk2MTZmM2ZhMjBfNGhkcERBbVdpN0VTVkVCNGpqWk1qRDJkSWZidGJ2eFZfVG9rZW46SFVCRWJZdzByb3VKUW94VHJseGM0OXVJbmNIXzE2ODQ3MzIzMTg6MTY4NDczNTkxOF9WNA)
-
   
 
 和openai官方的ChatGPT/GPT4相比，AutoGPT主要省去了一步步和ChatGPT/GPT4交互的过程，隐藏了prompt等细节；同时AutoGPT实现了多个工具，并通过prompt告诉大模型工具的能力，使大模型可以使用工具，扩展大模型的能力边界
 
-  
 
 和 langchain 相比，langchain 是一个库，需要编程后才能和大模型交互，AutoGPT 是一个应用，可以直接和大模型交互；从概念上来讲，AutoGPT 相当于 langchain 中的 Agent，AutoGPT 中的工具相当于 langchain 中的 tool，AutoGPT 中的 memory 和 langchain 的 memory 相当
 
@@ -366,7 +362,6 @@ AutoGPT 支持多种 Memory 类型，具体如下
 0.3.0 版本，会把所有历史对话和命令执行结果做摘要，并把摘要加入 Prompt
 
   
-
 0.2.2 版本，会对每一轮对话做 embeding，并把对话和 embeding 存入 memory。询问大模型下一步动作时，会把最近几轮对话最相关的内容从 memory 中召回，在 token 足够时，尽可能多的加入召回的内容
 
 ### 文件 embeding
