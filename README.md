@@ -4,7 +4,7 @@
 
 TODO
 - [ ] LLaMA
-	- [ ] Cache causal multi-head attention
+	- [ ] Cache causal multi-head attention https://www.zhihu.com/question/596900067/answer/3040011798
 - [ ] LLM
 	- [ ] https://github.com/lucidrains/MEGABYTE-pytorch
 	- [ ] MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers https://arxiv.org/abs/2305.07185
@@ -18,3 +18,5 @@ TODO
 	- [ ]  关于 ChatGPT 的知识： https://github.com/dalinvip/Awesome-ChatGPT
 	- [ ] 关于 ChatGPT 的资源： https://github.com/NicholasCao/Awesome-Chinese-ChatGPT
 	- [ ] 用 RLHF 训练 LLaMA 的手把手教程 https://huggingface.co/blog/zh/stackllama
+	- [ ] DeepSpeed
+	- [ ] A Survey of Large Language Models https://zhuanlan.zhihu.com/p/631065995
