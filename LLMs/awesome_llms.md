@@ -25,7 +25,7 @@
 ### LLAMA
 
 > 笔记：[LLAMA](../论文/LLMs/LLAMA.md)
-> GitHub 地址： https://github.com/facebookresearch/llama
+> GitHub 地址：https://github.com/facebookresearch/llama
 
 
 
@@ -38,7 +38,7 @@
 ### Vicuna
 
 > 和 Stanford Alpaca 一致，基于 LLAMA 微调
-> GitHub 地址： https://github.com/lm-sys/FastChat
+> GitHub 地址：https://github.com/lm-sys/FastChat
 
 
 
@@ -51,7 +51,7 @@
 >
 > 笔记：[Chinese-LLaMA-Alpaca](../论文/LLMs/Chinese-LLaMA-Alpaca.md)
 >
-> GitHub 地址： https://github.com/ymcui/Chinese-LLaMA-Alpaca
+> GitHub 地址：https://github.com/ymcui/Chinese-LLaMA-Alpaca
 
 
 
@@ -59,7 +59,7 @@
 
 > 复旦大学中英双语大模型
 >
-> GitHub 地址： https://github.com/OpenLMLab/MOSS
+> GitHub 地址：https://github.com/OpenLMLab/MOSS
 
 
 
@@ -67,7 +67,7 @@
 
 > 基于 LLAMA 的模型
 > 
-> GItHub 地址： https://github.com/nomic-ai/gpt4all
+> GItHub 地址：https://github.com/nomic-ai/gpt4all
 
 
 
@@ -81,30 +81,36 @@
 
 ### DeepSpeed
 > 微软开源框架：深度学习的训练和推理的加速和模型缩减
-> GitHub 地址： https://github.com/microsoft/DeepSpeed
-> 博客： https://mp.weixin.qq.com/s/6y5e9MvSXXLCj-q7FI08Kw
+>
+> GitHub 地址：https://github.com/microsoft/DeepSpeed
+>
+> 博客：https://mp.weixin.qq.com/s/6y5e9MvSXXLCj-q7FI08Kw
 
 ### LoRA
+
 > GitHub 地址：https://github.com/microsoft/LoRA
-> 博客： https://zhuanlan.zhihu.com/p/515954218
+>
+> 笔记： [LoRA.md](../论文/Optimizer/LoRA.md) 
 
 ### bitsandbytes
 
-> GitHub 地址： https://github.com/TimDettmers/bitsandbytes
+> GitHub 地址：https://github.com/TimDettmers/bitsandbytes
 > bitsandbytes 是 CUDA 自定义函数的一个轻量级封装，特别是 8 位优化器、矩阵乘法（LLM.int8()）和量化函数
+
 
 
 ## 开源实现
 
 ### Alpaca-LoRA
-> GitHub 地址： https://github.com/tloen/alpaca-lora
+> GitHub 地址：https://github.com/tloen/alpaca-lora
 
 ### LMFlow
-> GitHub 地址： https://github.com/OptimalScale/LMFlow
+> GitHub 地址：https://github.com/OptimalScale/LMFlow
 
 ### LuoTO
-> GitHub 地址： https://github.com/LC1332/Luotuo-Chinese-LLM
+> GitHub 地址：https://github.com/LC1332/Luotuo-Chinese-LLM
 > 
+
 
 
 ## 数据
@@ -112,11 +118,12 @@
 - [LLMs 中文开源语料](LLMs中文开源语料.md)
 
 
+
 ## 论文
 
 ### self-instruct
 
-> 论文： https://arxiv.org/pdf/2212.10560.pdf
+> 论文：https://arxiv.org/pdf/2212.10560.pdf
 
 
 
@@ -129,18 +136,20 @@
 
 ### LLMs 综述
 
->论文： https://arxiv.org/pdf/2303.18223.pdf
->机器之心解读： https://mp.weixin.qq.com/s/7HRr55Md2Wl6EHQMGioumw
+>论文：https://arxiv.org/pdf/2303.18223.pdf
+>机器之心解读：https://mp.weixin.qq.com/s/7HRr55Md2Wl6EHQMGioumw
 
 
 
 
 ## 技术解读
 
-- 关于 ChatGPT 的知识： https://github.com/dalinvip/Awesome-ChatGPT
-- 关于 ChatGPT 的资源： https://github.com/NicholasCao/Awesome-Chinese-ChatGPT
+- 关于 ChatGPT 的知识：https://github.com/dalinvip/Awesome-ChatGPT
+- 关于 ChatGPT 的资源：https://github.com/NicholasCao/Awesome-Chinese-ChatGPT
 
 - [ ] 用 RLHF 训练 LLaMA 的手把手教程 https://huggingface.co/blog/zh/stackllama
+
+
 
 ## LLM 项目
 
@@ -182,8 +191,6 @@ AgentGPT 实现：行动 -> 分析行动结果 -> 思考 -> 决定下一步行�
 > LLMs 的 benchmark 测试
 > 地址：https://lmsys.org/blog/2023-05-03-arena/
 
-
-
 ### pyllama
 
 > LLaMA 模型下载、推理、web 服务
@@ -205,7 +212,7 @@ AgentGPT 实现：行动 -> 分析行动结果 -> 思考 -> 决定下一步行�
 ### searchGPT
 
 > You may consider that this is a **minimal implementation of new Bing mainly for search engine and question answering**.
-> GitHub 地址： https://github.com/michaelthwan/searchGPT
+> GitHub 地址：https://github.com/michaelthwan/searchGPT
 > 解读：
 
 
