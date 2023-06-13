@@ -124,7 +124,7 @@ with sdp_kernel(**backend_map[SDPBackend.EFFICIENT_ATTENTION]):
 > FlashAttention is not supported. See warnings for reasons.  
 > The memory efficient implementation runs in 6595.339 microseconds
 
-好吧，V100 卡属于 sm 7.0，不支持 Flash attention，但是我们可以看到默认采用的 kernel 是 sdpd_mem_eff，它相比 sdpd_math，速度提升非常明显（6ms vs 16ms）。当我们把机器换成 A100 后，运行结果如下所示：
+V100 卡属于 sm 7.0，不支持 Flash attention，但是我们可以看到默认采用的 kernel 是 sdpd_mem_eff，它相比 sdpd_math，速度提升非常明显（6ms vs 16ms）。当我们把机器换成 A100 后，运行结果如下所示：
 
 > The default implementation runs in 2831.521 microseconds  
 > The math implementation runs in 7001.696 microseconds  

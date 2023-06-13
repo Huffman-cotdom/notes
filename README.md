@@ -12,14 +12,14 @@ TODO
 	- [ ] https://github.com/jerryjliu/llama_index
 	- [ ] NLP2Code https://nl2code.github.io/
 	- [ ] Parallel Context Windows for Large Language Models https://arxiv.org/abs/2212.10947
-	- [x] searchGPT: https://github.com/michaelthwan/searchGPT
 	- [ ] 位置编码：https://zhuanlan.zhihu.com/p/415020704
-	- [x] C-Eval 中文基准测试：https://yaofu.notion.site/C-Eval-6b79edd91b454e3d8ea41c59ea2af873
 	- [ ]  关于 ChatGPT 的知识：https://github.com/dalinvip/Awesome-ChatGPT
 	- [ ] 关于 ChatGPT 的资源：https://github.com/NicholasCao/Awesome-Chinese-ChatGPT
 	- [ ] 用 RLHF 训练 LLaMA 的手把手教程 https://huggingface.co/blog/zh/stackllama
 	- [ ] DeepSpeed
 	- [ ] A Survey of Large Language Models https://zhuanlan.zhihu.com/p/631065995
-	- [x] LoRA
 	- [ ] GLM：https://zhuanlan.zhihu.com/p/560559133
+	- [ ] YuLan-Chat 人民大学在 LLaMA 上做 SFT 训练 https://mp.weixin.qq.com/s/4pk4vHzAf_kiXYWT-abLlg
+	- [ ] [TigerBot](https://github.com/TigerResearch/TigerBot)
+	- [ ] Alibi（长度外推）：https://arxiv.org/abs/2108.12409
 - [ ] [Ladder Side-Tuning：预训练模型的“过墙梯”](https://kexue.fm/archives/9138)
