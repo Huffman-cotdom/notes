@@ -63,17 +63,37 @@
 
 
 
+### baichuan
+
+> 模型结构完全和 LLaMA 相同，在大约 1.2 万亿 tokens 上训练的 70 亿参数模型，支持中英双语，上下文窗口长度为 4096。在标准的中文和英文权威 benchmark（C-EVAL/MMLU）上均取得同尺寸最好的效果。
+>
+> GitHub 地址：https://github.com/baichuan-inc/baichuan-7B
+
+
+
 ### GPT4ALL
 
 > 基于 LLAMA 的模型
 > 
-> GItHub 地址：https://github.com/nomic-ai/gpt4all
+> GitHub 地址：https://github.com/nomic-ai/gpt4all
 
 
 
 ### StableLM: Stability AI Language Models
 
 > Stable Diffusion 公司开源的 LLM
+
+
+
+### Anima
+
+> 第一个开源的基于 QLoRA 的 33B 中文大语言
+>
+> 笔记： [Anima.md](awesome_llm_projects/Anima.md) 
+>
+> GitHub 地址：https://github.com/lyogavin/Anima
+
+
 
 
 
@@ -196,18 +216,15 @@ AgentGPT 实现：行动 -> 分析行动结果 -> 思考 -> 决定下一步行�
 > LLaMA 模型下载、推理、web 服务
 > 地址：https://github.com/juncongmoo/pyllama
 
-
 ### ChatDoc
 
 >ChatDOC is a ChatGPT-based file-reading assistant that can quickly extract, locate, and summarize information from documents.
 >地址：https://chatdoc.com/
 
-
 ### ChatPDF
 
 > 地址：https://www.chatpdf.com/
 > 解读： [ChatPDF](awesome_llm_projects/ChatPDF.md)
-
 
 ### searchGPT
 

@@ -1,25 +1,45 @@
 > 旋转式位置编码（Rotary Position Embedding，RoPE）
+>
 > 博客：https://kexue.fm/archives/8265
+>
 > 知乎：https://zhuanlan.zhihu.com/p/415020704
 
 假设函数 $f(⋅,f)$ 表示添加绝对位置信息的函数（即 RoPE）， $g(q,k,m-n)$ 表示位置敏感的内积运算，那么 RoPE 满足：
+
 $$f(\boldsymbol{q}, m)^{\top} f(\boldsymbol{k}, n)=g(\boldsymbol{q}, \boldsymbol{k}, m-n)$$
+
 假设 $f(⋅,f)$ 的形式为 $f(x,t)=R_tx$ ，那么有
+
 $$\begin{aligned} g(\boldsymbol{q}, \boldsymbol{k}, m-n) & =f(\boldsymbol{q}, m)^{\top} f(\boldsymbol{k}, n) \\ & =\left(R_m \boldsymbol{q}\right)^{\top}\left(R_n \boldsymbol{k}\right) \\ & =\boldsymbol{q}^{\top} R_m^{\top} R_n \boldsymbol{k}\end{aligned}$$
+
 考虑到公式一，那么有$f(\boldsymbol{q}, m)^{\top} f(\boldsymbol{k}, n)=f(\boldsymbol{q}, m+k)^{\top} f(\boldsymbol{k}, n+k)$，即有：
+
 $${R}^{\top}_mR_n={R}^{\top}_{m+k}R_{n+k}=W_{m-n}$$
+
 在二维情况下：
+
 $$\begin{equation} \boldsymbol{f}(\boldsymbol{q}, m) =\begin{pmatrix}\cos m\theta & -\sin m\theta\\ \sin m\theta & \cos m\theta\end{pmatrix} \begin{pmatrix}q_0 \\ q_1\end{pmatrix}\end{equation}$$
+
 那么有：
+
 $$\begin{align} R_m^\top R_n &=\left(\begin{array}{cc} \cos \alpha_m & -\sin \alpha_m\\ \sin \alpha_m & \cos \alpha_m\\ \end{array}\right)^\top \left(\begin{array}{cc} \cos \alpha_n & -\sin \alpha_n\\ \sin \alpha_n & \cos \alpha_n\\ \end{array}\right)\\ &=\left(\begin{array}{cc} \cos \alpha_m & \sin \alpha_m\\ -\sin \alpha_m & \cos \alpha_m\\ \end{array}\right)\left(\begin{array}{cc} \cos \alpha_n & -\sin \alpha_n\\ \sin \alpha_n & \cos \alpha_n\\ \end{array}\right)\\ &=\left(\begin{array}{cc} \cos \alpha_m\cos \alpha_n + \sin \alpha_m \sin \alpha_n & - \cos \alpha_m \sin \alpha_n + \sin \alpha_m\cos \alpha_n\\ - \sin \alpha_m\cos \alpha_n+\cos \alpha_m \sin \alpha_n & \sin \alpha_m \sin \alpha_n+\cos \alpha_m\cos \alpha_n \\ \end{array}\right)\\ \end{align}$$
+
 根据三角恒等变换公式：
+
 $$\begin{align} \sin (\alpha+\beta)&=\sin \alpha \cos\beta + \cos \alpha \sin\beta\\ \cos (\alpha+\beta)&=\cos \alpha \cos\beta - \sin \alpha \sin\beta \end{align}$$
+
 可以化简得到
+
 $$R_m^\top R_n=\left(\begin{array}{cc} \cos (\alpha_n-\alpha_m) & -\sin (\alpha_n-\alpha_m)\\ \sin (\alpha_n-\alpha_m) & \cos (\alpha_n-\alpha_m)\\ \end{array}\right)=R_{n-m}$$
+
 于是任意偶数维的 RoPE，我们都可以表示为二维情形的拼接，即
+
 $$\begin{equation}\scriptsize{\underbrace{\begin{pmatrix} \cos m\theta_0 & -\sin m\theta_0 & 0 & 0 & \cdots & 0 & 0 \\ \sin m\theta_0 & \cos m\theta_0 & 0 & 0 & \cdots & 0 & 0 \\ 0 & 0 & \cos m\theta_1 & -\sin m\theta_1 & \cdots & 0 & 0 \\ 0 & 0 & \sin m\theta_1 & \cos m\theta_1 & \cdots & 0 & 0 \\ \vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\ 0 & 0 & 0 & 0 & \cdots & \cos m\theta_{d/2-1} & -\sin m\theta_{d/2-1} \\ 0 & 0 & 0 & 0 & \cdots & \sin m\theta_{d/2-1} & \cos m\theta_{d/2-1} \\ \end{pmatrix}}_{\boldsymbol{\mathcal{R}}_m} \begin{pmatrix}q_0 \\ q_1 \\ q_2 \\ q_3 \\ \vdots \\ q_{d-2} \\ q_{d-1}\end{pmatrix}}\end{equation}$$
+
 也就是说，给位置为$m$的向量$q$乘上矩阵$R_m$、位置为$n$的向量$k$乘上矩阵$R_n$，用变换后的$Q,K$序列做 Attention，那么 Attention 就自动包含相对位置信息了，因为成立恒等式：
+
 $$\begin{equation}(\boldsymbol{\mathcal{R}}_m \boldsymbol{q})^{\top}(\boldsymbol{\mathcal{R}}_n \boldsymbol{k}) =  \boldsymbol{q}^{\top} \boldsymbol{\mathcal{R}}_m^{\top}\boldsymbol{\mathcal{R}}_n \boldsymbol{k} = \boldsymbol{q}^{\top} \boldsymbol{\mathcal{R}}_{n-m} \boldsymbol{k}\end{equation}$$
+
 值得指出的是，$R_m$是一个正交矩阵，它不会改变向量的模长，因此通常来说它不会改变原模型的稳定性。
 
 由于$R_m$的稀疏性，所以直接用矩阵乘法来实现会很浪费算力，推荐通过下述方式来实现 RoPE：
@@ -29,7 +49,7 @@ $$\begin{equation}\begin{pmatrix}q_0 \\ q_1 \\ q_2 \\ q_3 \\ \vdots \\ q_{d-2} \
 \end{pmatrix} + \begin{pmatrix}-q_1 \\ q_0 \\ -q_3 \\ q_2 \\ \vdots \\ -q_{d-1} \\ q_{d-2} 
 \end{pmatrix}\otimes\begin{pmatrix}\sin m\theta_0 \\ \sin m\theta_0 \\ \sin m\theta_1 \\ \sin m\theta_1 \\ \vdots \\ \sin m\theta_{d/2-1} \\ \sin m\theta_{d/2-1} 
 \end{pmatrix}\end{equation}$$
-  
+
 其中$⊗$是逐位对应相乘，即 Numpy、Tensorflow 等计算框架中的$∗$运算。从这个实现也可以看到，RoPE 可以视为是乘性位置编码的变体。
 
 可以看到，RoPE 形式上和 Sinusoidal 位置编码有点相似，只不过 Sinusoidal 位置编码是加性的，而 RoPE 可以视为乘性的。在$θ_i$的选择上，我们同样沿用了 Sinusoidal 位置编码的方案，即$\theta_i = 10000^{-2i/d}$，它可以带来一定的远程衰减性。
@@ -246,6 +266,5 @@ reshape 之后，就是将位置信息融入 query 和 key 中：
 xq_out = torch.view_as_real(xq_ * freqs_cis).flatten(3)
 ```
 
-这一步将二者相乘得到的复数 tensor，重新转换为实数形式，得到的 shape 为 (2, 512, 12, 32, 2)，然后再 flatten 成 (2, 512, 12, 64)，这样一来，就变回了和最开始$x_q​$相同的形状，也就完成了将位置信息融入到$x_q$的这一操作。$x_k​$ 同理。
-
+这一步将二者相乘得到的复数 tensor，重新转换为实数形式，得到的 shape 为 (2, 512, 12, 32, 2)，然后再 flatten 成 (2, 512, 12, 64)，这样一来，就变回了和最开始$x_q$相同的形状，也就完成了将位置信息融入到$x_q$的这一操作。$x_k$ 同理。
 
